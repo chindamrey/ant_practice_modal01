@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .navbar .navbar-nav .nav-item {
+            padding: 2px 16px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><i class="fa-brands fa-nfc-directional"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Demos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Catalog</a></li>
+                                <li><a class="dropdown-item" href="#">Account</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Vender</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-transparent px-4 fw-bold text-danger"
+                        data-bs-target="#signUpModal" data-bs-toggle="modal"><i class="fa-solid fa-user "></i> Sign
+                        Up</button>
+                    <button type="button" class="btn btn-danger"><i class="fa-solid fa-plus"></i> Add Property</button>
+                    <!--sign in Modal -->
+                    <div class="modal fade" id="signUpModal" tabindex="-1"
+                        aria-labelledby="signUpModal" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div>
+                                                <h2 class="px-3">Hey there! <br>Welcome back.</h2>
+                                                <img src="signin.svg" class="img-fluid m-5" alt="">
+                                                <p class="px-3">don't have an account? <a type="button" data-bs-target="#signupModal" data-bs-toggle="modal"
+                                                        class="text-danger">sign up here</a></p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div>
+                                                <div class="d-flex flex-column ">
+                                                    <button type="button"
+                                                        class="btn btn-transparent border my-3 py-2 fw-bold"><i
+                                                            class="fa-brands fa-google"></i> Sign Up With
+                                                        Google</button>
+                                                    <button type="button"
+                                                        class="btn btn-transparent border  py-2 fw-bold"><i
+                                                            class="fa-brands fa-facebook-f"></i> Sign Up With
+                                                        Facebook</button>
+                                                </div>
+                                                <p class="py-4 text-center border ">Or</p>
+                                                <form action="">
+                                                    <label for="" class="form-label">Email Address</label>
+                                                    <input type="email" class="form-control"
+                                                        placeholder="Enter your email">
+                                                    <div class="d-flex pt-3">
+                                                        <label for="" class="form-label me-auto">Password</label>
+                                                        <a href="#" class="text-danger d-block">forgot password?</a>
+                                                    </div>
+                                                    <input type="password" class="form-control"
+                                                        placeholder="Enter your password">
+                                                    <button type="button"
+                                                        class="btn btn-transparent border w-100  mt-3 py-2 bg-danger text-white fw-bold"> Sign In
+                                                    </button>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sign up modal  -->
+                     <div class="modal fade" id="signupModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div>
+                                                <h2 class="px-3">Hey there! <br>Welcome back.</h2>
+                                                <img src="signin.svg" class="img-fluid m-5" alt="">
+                                                <p class="px-3">don't have an account? <a href="#"
+                                                        class="text-danger">sign up here</a></p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div>
+                                                <div class="d-flex flex-column ">
+                                                    <button type="button"
+                                                        class="btn btn-transparent border my-3 py-2 fw-bold"><i
+                                                            class="fa-brands fa-google"></i> Sign Up With
+                                                        Google</button>
+                                                    <button type="button"
+                                                        class="btn btn-transparent border  py-2 fw-bold"><i
+                                                            class="fa-brands fa-facebook-f"></i> Sign Up With
+                                                        Facebook</button>
+                                                </div>
+                                                <p class="py-4 text-center border ">Or</p>
+                                                <form action="">
+                                                    <label for="" class="form-label">Email Address</label>
+                                                    <input type="email" class="form-control"
+                                                        placeholder="Enter your email">
+                                                    <div class="d-flex pt-3">
+                                                        <label for="" class="form-label me-auto">Password</label>
+                                                        <a href="#" class="text-danger d-block">forgot password?</a>
+                                                    </div>
+                                                    <input type="password" class="form-control"
+                                                        placeholder="Enter your password">
+                                                    <button type="button"
+                                                        class="btn btn-transparent border w-100  mt-3 py-2 bg-danger text-white fw-bold"> Sign In
+                                                    </button>
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
