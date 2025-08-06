@@ -7,11 +7,9 @@
     <title>Modal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        .navbar .navbar-nav .nav-item {
-            padding: 2px 16px;
-            font-size: 17px;
-        }
+       
     </style>
 </head>
 
@@ -62,8 +60,8 @@
                         Up</button>
                     <button type="button" class="btn btn-danger"><i class="fa-solid fa-plus"></i> Add Property</button>
                     <!--sign in Modal -->
-                    <div class="modal fade" id="signUpModal" tabindex="-1"
-                        aria-labelledby="signUpModal" aria-hidden="true">
+                    <div class="modal fade modal-lg" id="signUpModal" tabindex="-1" aria-labelledby="signUpModal"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
 
@@ -73,7 +71,8 @@
                                             <div>
                                                 <h2 class="px-3">Hey there! <br>Welcome back.</h2>
                                                 <img src="signin.svg" class="img-fluid m-5" alt="">
-                                                <p class="px-3">don't have an account? <a type="button" data-bs-target="#signupModal" data-bs-toggle="modal"
+                                                <p class="px-3">don't have an account? <a type="button"
+                                                        data-bs-target="#signupModal" data-bs-toggle="modal"
                                                         class="text-danger">sign up here</a></p>
                                             </div>
 
@@ -90,7 +89,7 @@
                                                             class="fa-brands fa-facebook-f"></i> Sign Up With
                                                         Facebook</button>
                                                 </div>
-                                                <p class="py-4 text-center border ">Or</p>
+                                                <p class="py-4 text-center  ">Or</p>
                                                 <form action="">
                                                     <label for="" class="form-label">Email Address</label>
                                                     <input type="email" class="form-control"
@@ -102,7 +101,8 @@
                                                     <input type="password" class="form-control"
                                                         placeholder="Enter your password">
                                                     <button type="button"
-                                                        class="btn btn-transparent border w-100  mt-3 py-2 bg-danger text-white fw-bold"> Sign In
+                                                        class="btn btn-transparent border w-100  mt-3 py-2 bg-danger text-white fw-bold">
+                                                        Sign In
                                                     </button>
                                                 </form>
 
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <!-- sign up modal  -->
-                     <div class="modal fade" id="signupModal" tabindex="-1"
+                    <div class="modal fade modal-lg" id="signupModal" tabindex="-1"
                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
@@ -122,16 +122,23 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-xl-6">
-                                            <div>
-                                                <h2 class="px-3">Hey there! <br>Welcome back.</h2>
-                                                <img src="signin.svg" class="img-fluid m-5" alt="">
+                                            <div class="m-3">
+                                                <h2 class="px-3">Join Finder. <br>
+                                                    Get premium benefits:</h2>
+                                                <div class="px-3 pt-4">
+                                                    <p><i class="fa-solid fa-circle-check text-danger "></i> Add and promote your listings</p>
+                                                    <p><i class="fa-solid fa-circle-check text-danger"></i> Easily manage your wishlist</p>
+                                                    <p><i class="fa-solid fa-circle-check text-danger"></i> Leave reviews</p>
+                                                </div>
+
+                                                <img src="signup.svg" class="img-fluid my-3" alt="">
                                                 <p class="px-3">don't have an account? <a href="#"
                                                         class="text-danger">sign up here</a></p>
                                             </div>
 
                                         </div>
                                         <div class="col-xl-6">
-                                            <div>
+                                            <div class="m-3">
                                                 <div class="d-flex flex-column ">
                                                     <button type="button"
                                                         class="btn btn-transparent border my-3 py-2 fw-bold"><i
@@ -142,19 +149,30 @@
                                                             class="fa-brands fa-facebook-f"></i> Sign Up With
                                                         Facebook</button>
                                                 </div>
-                                                <p class="py-4 text-center border ">Or</p>
+                                                <p class="py-4 text-center  ">Or</p>
                                                 <form action="">
-                                                    <label for="" class="form-label">Email Address</label>
+                                                    <label for="" class="form-label ">Full name</label>
+                                                    <input type="email" class="form-control"
+                                                        placeholder="Enter your full name">
+                                                    <label for="" class="form-label pt-4">Email Address</label>
                                                     <input type="email" class="form-control"
                                                         placeholder="Enter your email">
-                                                    <div class="d-flex pt-3">
-                                                        <label for="" class="form-label me-auto">Password</label>
-                                                        <a href="#" class="text-danger d-block">forgot password?</a>
-                                                    </div>
+
+                                                    <label for="" class="form-label me-auto  pt-4">Password </label>
                                                     <input type="password" class="form-control"
                                                         placeholder="Enter your password">
-                                                    <button type="button"
-                                                        class="btn btn-transparent border w-100  mt-3 py-2 bg-danger text-white fw-bold"> Sign In
+                                                    <label for="" class="form-label me-auto pt-4">Comfirm
+                                                        Password</label>
+                                                    <input type="password" class="form-control"
+                                                        placeholder="Enter your password">
+                                                   
+                                                    <div class="d-flex align-items-start py-3">
+                                                        <input type="checkbox" class="form-check-input text-danger mt-2 me-2" >
+                                                        <label for="" class="form-label">By joining, I agree to the <a href="#" class="text-danger">Term of User</a> and <a href="#" class="text-danger">Privacy policy</a></label>
+                                                    </div>
+                                                     <button type="button"
+                                                        class="btn btn-transparent border w-100  mt-3 py-2 bg-danger text-white fw-bold">
+                                                        Sign In
                                                     </button>
                                                 </form>
 

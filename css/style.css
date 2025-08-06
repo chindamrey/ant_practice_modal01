@@ -1,0 +1,13 @@
+ .navbar .navbar-nav .nav-item {
+            padding: 2px 16px;
+            font-size: 17px;
+        }
+.navbar .modal .modal-content .modal-body button:hover{
+    background-color: blue;
+    color:white;
+    font-weight: bold;
+   
+}
+.navbar .modal .modal-content .modal-body a:hover{
+    text-decoration: none;
+}
